@@ -25,7 +25,7 @@ func NewBlock(data string, prevBlockHash string) *Block {
 		Data:          data,
 		PrevBlockHash: prevBlockHash,
 	}
-
+	block.setHash()
 	return block
 }
 
